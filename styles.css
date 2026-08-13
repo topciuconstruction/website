@@ -162,8 +162,10 @@ a {
   padding: 92px 0 56px;
   color: var(--white);
   background:
-    linear-gradient(115deg, rgba(7, 29, 56, 0.96), rgba(7, 29, 56, 0.72)),
-    url("assets/project-renovation.jpg") center / cover;
+    linear-gradient(115deg, transparent 24%, rgba(255, 255, 255, 0.07) 41%, transparent 58%),
+    radial-gradient(112% 84% at 76% 6%, rgba(240, 199, 91, 0.2), transparent 56%),
+    radial-gradient(88% 76% at 6% 98%, rgba(216, 168, 59, 0.13), transparent 60%),
+    linear-gradient(115deg, #061a33 0%, #0e3157 46%, #082441 78%, #061a33 100%);
 }
 
 .hero::before {
@@ -617,8 +619,9 @@ h2 {
   padding: 84px 0 72px;
   color: var(--white);
   background:
-    linear-gradient(125deg, rgba(7, 29, 56, 0.98), rgba(14, 49, 87, 0.82)),
-    url("assets/project-systems.jpg") center / cover;
+    linear-gradient(125deg, transparent 22%, rgba(255, 255, 255, 0.06) 40%, transparent 56%),
+    radial-gradient(100% 130% at 84% 0%, rgba(240, 199, 91, 0.18), transparent 58%),
+    linear-gradient(125deg, #061a33 0%, #0e3157 58%, #071d38 100%);
 }
 
 .page-hero h1 {
@@ -825,8 +828,8 @@ h2 {
     min-height: calc(100svh - 72px);
     padding: 46px 0 38px;
     background:
-      linear-gradient(180deg, rgba(7, 29, 56, 0.88), rgba(7, 29, 56, 0.82) 48%, rgba(7, 29, 56, 0.92)),
-      url("assets/project-renovation.jpg") center top / cover;
+      radial-gradient(120% 58% at 72% 4%, rgba(240, 199, 91, 0.18), transparent 58%),
+      linear-gradient(180deg, #061a33 0%, #0e3157 46%, #071d38 100%);
   }
 
   .hero-grid {
