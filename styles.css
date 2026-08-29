@@ -1281,3 +1281,15 @@ h2 {
 .page-hero .lead {
   margin-top: 18px;
 }
+
+.beforeafter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 980px) {
+  .beforeafter {
+    grid-template-columns: 1fr;
+  }
+}
