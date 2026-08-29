@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 764" width="1600" height="764" role="img" aria-label="Σύγχρονη βίλα με πισίνα το σούρουπο — εικαστική απεικόνιση">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#04142a"/>
+      <stop offset="34%"  stop-color="#092647"/>
+      <stop offset="62%"  stop-color="#17405f"/>
+      <stop offset="84%"  stop-color="#6d5533"/>
+      <stop offset="100%" stop-color="#c1913f"/>
+    </linearGradient>
+    <radialGradient id="sunglow" cx="0.68" cy="1" r="0.75">
+      <stop offset="0%"   stop-color="#f7d688" stop-opacity="0.7"/>
+      <stop offset="42%"  stop-color="#d8a83b" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#d8a83b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#ffeab0"/>
+      <stop offset="60%"  stop-color="#efc55a"/>
+      <stop offset="100%" stop-color="#c08a33"/>
+    </linearGradient>
+    <linearGradient id="glassUp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#b9d3ea" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#f0c75b" stop-opacity="0.72"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#215f92"/>
+      <stop offset="55%"  stop-color="#123f68"/>
+      <stop offset="100%" stop-color="#0a2743"/>
+    </linearGradient>
+    <linearGradient id="deck" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#0e2c4b"/>
+      <stop offset="100%" stop-color="#05182e"/>
+    </linearGradient>
+    <linearGradient id="vig" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#061a33" stop-opacity="0.94"/>
+      <stop offset="30%"  stop-color="#061a33" stop-opacity="0.4"/>
+      <stop offset="58%"  stop-color="#061a33" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#061a33" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky and dusk glow -->
+  <rect width="1600" height="764" fill="url(#sky)"/>
+  <rect y="120" width="1600" height="330" fill="url(#sunglow)"/>
+
+  <!-- distant hills -->
+  <path d="M0 418 L188 388 L352 410 L516 378 L700 406 L900 382 L1120 412 L1330 390 L1600 414 L1600 452 L0 452 Z"
+        fill="#0a2137" fill-opacity="0.92"/>
+  <path d="M0 434 L232 414 L430 432 L668 408 L940 434 L1220 412 L1600 436 L1600 462 L0 462 Z"
+        fill="#071b2d"/>
+
+  <!-- ground -->
+  <rect y="440" width="1600" height="324" fill="url(#deck)"/>
+  <path d="M0 440 H1600 V452 H0 Z" fill="#14395c" opacity="0.5"/>
+
+  <!-- cypress grove -->
+  <g fill="#05182a">
+    <path d="M700 452 C688 408 695 348 710 316 C725 348 732 408 720 452 Z"/>
+    <path d="M736 454 C726 418 732 370 745 344 C758 370 764 418 754 454 Z"/>
+    <path d="M776 456 C768 428 773 392 783 372 C793 392 798 428 790 456 Z"/>
+  </g>
+
+  <!-- ==== villa ==== -->
+  <!-- base slab -->
+  <rect x="818" y="486" width="550" height="13" fill="#0a2439"/>
+
+  <!-- ground floor: glazed living level -->
+  <rect x="838" y="370" width="500" height="116" fill="#071e36"/>
+  <rect x="852" y="382" width="380" height="94" fill="url(#glass)" opacity="0.93"/>
+  <g stroke="#071e36" stroke-width="6">
+    <path d="M928 382V476M1004 382V476M1080 382V476M1156 382V476"/>
+  </g>
+
+  <!-- solid volume on the right -->
+  <rect x="1258" y="352" width="92" height="134" fill="#123a5f"/>
+  <rect x="1258" y="352" width="92" height="134" fill="#000" opacity="0.18"/>
+  <rect x="1278" y="386" width="22" height="62" fill="url(#glass)" opacity="0.5"/>
+
+  <!-- cantilevered upper volume -->
+  <rect x="792" y="264" width="596" height="106" fill="#0f3357"/>
+  <rect x="792" y="264" width="596" height="106" fill="#000" opacity="0.12"/>
+  <rect x="776" y="250" width="628" height="14" fill="#1b4c7b"/>
+  <rect x="776" y="250" width="628" height="4"  fill="#d8a83b" opacity="0.55"/>
+  <rect x="826" y="286" width="380" height="66" fill="url(#glassUp)"/>
+  <g stroke="#0f3357" stroke-width="6">
+    <path d="M902 286V352M978 286V352M1054 286V352M1130 286V352"/>
+  </g>
+  <!-- louvres -->
+  <g stroke="#0a2743" stroke-width="5" opacity="0.9">
+    <path d="M1232 272V362M1252 272V362M1272 272V362M1292 272V362M1312 272V362M1332 272V362M1352 272V362M1372 272V362"/>
+  </g>
+  <!-- slender columns under the cantilever -->
+  <g fill="#0a2439">
+    <rect x="846" y="370" width="9" height="116"/>
+    <rect x="1322" y="370" width="9" height="116"/>
+  </g>
+
+  <!-- pool, seen in perspective -->
+  <path d="M778 512 H1428 L1546 690 H672 Z" fill="#0b2843"/>
+  <path d="M786 518 H1420 L1530 682 H688 Z" fill="url(#water)"/>
+  <path d="M786 518 H1420" stroke="#1b4a78" stroke-width="3" opacity="0.7" fill="none"/>
+  <path d="M688 682 H1530" stroke="#2a6699" stroke-width="3" opacity="0.5" fill="none"/>
+  <!-- reflection of the lit facade, widening toward the viewer -->
+  <g fill="#f0c75b" opacity="0.3">
+    <path d="M902 534 H1218 L1224 543 H894 Z"/>
+    <path d="M882 566 H1238 L1246 576 H872 Z"/>
+    <path d="M858 602 H1262 L1272 613 H846 Z"/>
+    <path d="M832 640 H1288 L1300 651 H818 Z"/>
+  </g>
+  <g fill="#cfe3f5" opacity="0.13">
+    <path d="M812 548 H878 L882 556 H806 Z"/>
+    <path d="M1300 596 H1382 L1390 606 H1292 Z"/>
+  </g>
+
+  <!-- foreground planting -->
+  <g fill="#03101c">
+    <path d="M0 764 V690 C82 680 152 694 214 720 C266 742 306 754 340 764 Z"/>
+    <path d="M1600 764 V706 C1534 698 1470 714 1418 738 C1386 752 1362 760 1344 764 Z"/>
+  </g>
+
+  <!-- left fade keeps the headline readable -->
+  <rect width="1600" height="764" fill="url(#vig)"/>
+</svg>
