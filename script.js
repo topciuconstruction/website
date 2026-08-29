@@ -43,3 +43,13 @@ document.querySelectorAll("[data-tilt]").forEach((card) => {
     card.style.transform = "";
   });
 });
+
+const header = document.querySelector(".site-header");
+
+if (header) {
+  const setScrolled = () => {
+    header.classList.toggle("is-scrolled", window.scrollY > 24);
+  };
+  setScrolled();
+  window.addEventListener("scroll", setScrolled, { passive: true });
+}

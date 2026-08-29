@@ -73,10 +73,20 @@ a {
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   z-index: 50;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  transition: background 260ms ease, border-color 260ms ease, backdrop-filter 260ms ease;
+}
+
+/* once the hero is behind you the bar needs its own ground again */
+.site-header.is-scrolled,
+body.menu-open .site-header {
+  border-bottom-color: rgba(255, 255, 255, 0.16);
   background: rgba(7, 29, 56, 0.86);
   backdrop-filter: blur(18px);
 }
@@ -102,9 +112,6 @@ a {
   width: 54px;
   height: 54px;
   object-fit: contain;
-  background: #fff;
-  border-radius: 8px;
-  padding: 4px;
 }
 
 .brand span {
@@ -136,8 +143,14 @@ a {
 
 .main-nav a:hover,
 .main-nav a[aria-current="page"] {
-  color: var(--white);
-  background: rgba(255, 255, 255, 0.1);
+  color: var(--gold-2);
+  background: transparent;
+}
+
+/* the current page is marked with a rule, not a filled chip */
+.main-nav a[aria-current="page"] {
+  box-shadow: inset 0 -2px 0 var(--gold-2);
+  border-radius: 0;
 }
 
 .nav-cta {
@@ -616,7 +629,7 @@ h2 {
 }
 
 .page-hero {
-  padding: 84px 0 72px;
+  padding: 162px 0 72px;
   color: var(--white);
   background:
     linear-gradient(125deg, transparent 22%, rgba(255, 255, 255, 0.06) 40%, transparent 56%),
@@ -908,9 +921,10 @@ h2 {
 /* --- Hero ------------------------------------------------------------------ */
 
 .hero {
-  /* header is 78px and sticky, so this fills exactly one screen */
-  min-height: calc(100vh - 78px);
-  padding: 96px 0 108px;
+  /* the header floats over this now, so take the whole screen */
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 174px 0 108px;
   display: grid;
   align-items: center;
   background:
@@ -1190,11 +1204,10 @@ h2 {
 
 @media (max-width: 980px) {
   .hero {
-    /* fill the first screen here too; svh is the viewport with the
-       browser bars showing, which is what you get on load */
-    min-height: calc(100vh - 78px);
-    min-height: calc(100svh - 78px);
-    padding: 64px 0 88px;
+    /* svh is the viewport with the browser bars showing, i.e. on load */
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 142px 0 88px;
     background:
       linear-gradient(178deg, rgba(6, 26, 51, 0.95) 0%, rgba(6, 26, 51, 0.88) 34%, rgba(6, 26, 51, 0.55) 62%, rgba(6, 26, 51, 0.32) 100%),
       url("assets/hero-villa.jpg") 68% center / cover no-repeat,
@@ -1237,8 +1250,11 @@ h2 {
 
 @media (max-width: 640px) {
   .hero {
-    min-height: calc(100vh - 72px);
-    min-height: calc(100svh - 72px);
+    padding-top: 136px;
+  }
+
+  .page-hero {
+    padding-top: 140px;
   }
 
   .service-grid,
@@ -1341,4 +1357,9 @@ h2 {
   color: var(--muted);
   font-size: 13px;
   font-weight: 700;
+}
+
+/* the bar floats, so anchored sections must stop clear of it */
+[id] {
+  scroll-margin-top: 96px;
 }
