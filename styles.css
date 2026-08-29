@@ -1190,7 +1190,10 @@ h2 {
 
 @media (max-width: 980px) {
   .hero {
-    min-height: 0;
+    /* fill the first screen here too; svh is the viewport with the
+       browser bars showing, which is what you get on load */
+    min-height: calc(100vh - 78px);
+    min-height: calc(100svh - 78px);
     padding: 64px 0 88px;
     background:
       linear-gradient(178deg, rgba(6, 26, 51, 0.95) 0%, rgba(6, 26, 51, 0.88) 34%, rgba(6, 26, 51, 0.55) 62%, rgba(6, 26, 51, 0.32) 100%),
@@ -1233,6 +1236,11 @@ h2 {
 }
 
 @media (max-width: 640px) {
+  .hero {
+    min-height: calc(100vh - 72px);
+    min-height: calc(100svh - 72px);
+  }
+
   .service-grid,
   .work-grid,
   .stats-grid,
