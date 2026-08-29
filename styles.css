@@ -937,7 +937,8 @@ h2 {
 /* --- Hero ------------------------------------------------------------------ */
 
 .hero {
-  min-height: min(640px, 78vh);
+  /* header is 78px and sticky, so this fills exactly one screen */
+  min-height: calc(100vh - 78px);
   padding: 96px 0 108px;
   display: grid;
   align-items: center;
