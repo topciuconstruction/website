@@ -942,8 +942,8 @@ h2 {
   display: grid;
   align-items: center;
   background:
-    linear-gradient(96deg, #061a33 0%, rgba(6, 26, 51, 0.94) 24%, rgba(7, 32, 58, 0.66) 44%, rgba(7, 32, 58, 0.22) 62%, rgba(6, 26, 51, 0.08) 100%),
-    url("assets/hero-villa.svg") right center / cover no-repeat,
+    linear-gradient(96deg, rgba(6, 26, 51, 0.96) 0%, rgba(6, 26, 51, 0.9) 26%, rgba(7, 32, 58, 0.62) 45%, rgba(7, 32, 58, 0.24) 62%, rgba(6, 26, 51, 0.12) 100%),
+    url("assets/hero-villa.jpg") right center / cover no-repeat,
     linear-gradient(115deg, #061a33 0%, #0e3157 46%, #082441 78%, #061a33 100%);
 }
 
@@ -1219,10 +1219,10 @@ h2 {
 @media (max-width: 980px) {
   .hero {
     min-height: 0;
-    padding: 56px 0 320px;
+    padding: 64px 0 88px;
     background:
-      linear-gradient(180deg, #061a33 0%, rgba(6, 26, 51, 0.92) 34%, rgba(6, 26, 51, 0.35) 58%, rgba(6, 26, 51, 0) 78%),
-      url("assets/hero-villa.svg") 75% bottom / 170% auto no-repeat,
+      linear-gradient(178deg, rgba(6, 26, 51, 0.95) 0%, rgba(6, 26, 51, 0.88) 34%, rgba(6, 26, 51, 0.55) 62%, rgba(6, 26, 51, 0.32) 100%),
+      url("assets/hero-villa.jpg") 68% center / cover no-repeat,
       linear-gradient(115deg, #061a33 0%, #0e3157 46%, #082441 78%, #061a33 100%);
   }
 
