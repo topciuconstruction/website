@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Διαμόρφωση περιβάλλοντος χώρου — placeholder">
+  <defs>
+    <pattern id="h5" width="46" height="46" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="46" height="46" fill="none"/>
+      <line x1="0" y1="0" x2="0" y2="46" stroke="#d8a83b" stroke-opacity="0.13" stroke-width="10"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" fill="#0e3157"/>
+  <rect width="1200" height="900" fill="url(#h5)"/>
+
+  <rect x="70" y="70" width="1060" height="760" fill="#071d38" fill-opacity="0.55"
+        stroke="#d8a83b" stroke-opacity="0.55" stroke-width="4" stroke-dasharray="22 16" rx="10"/>
+
+  <g transform="translate(600 342) scale(0.92)" fill="none" stroke="#f0c75b" stroke-opacity="0.85"
+     stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-104 22 C-70 -6 -36 46 0 22 C36 -2 70 46 104 22"/>
+    <path d="M-104 68 C-70 40 -36 92 0 68 C36 44 70 92 104 68"/>
+    <path d="M-58 -6 L-58 -74 L28 -74"/>
+    <path d="M8 6 L8 -46"/>
+  </g>
+
+  <text x="600" y="553" text-anchor="middle" fill="#f0c75b" fill-opacity="0.95"
+        font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="46" font-weight="700"
+        letter-spacing="10">PLACEHOLDER</text>
+
+  <text x="600" y="634" text-anchor="middle" fill="#ffffff" fill-opacity="0.92"
+        font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="42" font-weight="600">Διαμόρφωση περιβάλλοντος χώρου</text>
+
+  <text x="600" y="706" text-anchor="middle" fill="#dce4ee" fill-opacity="0.7"
+        font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="27">Αναμονή φωτογραφίας έργου</text>
+</svg>
