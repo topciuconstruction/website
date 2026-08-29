@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://topciuconstruction.gr/sitemap.xml
+Sitemap: https://topciu-construction.gr/sitemap.xml
